@@ -1,0 +1,607 @@
+:root{
+    
+    --bg-color: #db9898;
+    --text-color: white;
+    --main-color: #ffda89;
+    --second-color: #52350b;
+}
+body{
+   background-color: antiquewhite;
+}
+
+.logo{
+    font-size: 3rem;
+    color:transparent;
+font-family:'Lobster',cursive;
+   font-style:italic;
+    cursor:pointer;
+    transition:0.3 ease-in-out; 
+    position: fixed;
+    font-weight: 900;
+    margin-left: 35px;
+ }
+
+  .logo:hover{
+    opacity:0.5; 
+    transform:scale();}
+
+  span{
+    background:linear-gradient(270deg,
+#b47949a8,rgba(53,34,10,0.616),rgb(66,52,35));
+    background-clip: text;
+    color:transparent;
+  }
+
+
+  nav {
+    position: fixed;
+    background-color: #c09d81d2;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    position: relative;
+    display: flex; 
+    justify-content: space-evenly; 
+    margin: 0;
+    padding-left:400px;
+    list-style: none;
+    width: 40%;
+    
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-top:10px;
+    margin-left: 100px;
+    
+ }
+
+ul li a {
+    text-decoration: none;
+    color:rgb(60, 38, 12);
+    font-size: 16px;
+    font-weight: 600;
+    font-style: initial;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    display: block;
+    padding: 15px 13px; 
+    transition: background-color 0.3s ease; 
+}
+
+ul li a:hover,
+ul li a:active {
+    background: linear-gradient(270deg, #ffda89, #52350b);
+    border-radius: 9%;
+    background-clip: text;
+    color: transparent;
+}
+
+.btn {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color:#d5b79fd2;
+    color:black;
+    box-shadow: 0 0 1px 1px bisque,
+                0 0 2px 2px bisque;
+}
+
+/*fundi i nav*/
+
+/*about*/
+.main_img {
+    width: 100%;
+    height: 450px;
+    z-index: 1;
+    position: relative;
+    
+  }
+  
+ 
+
+
+
+/*fillimi shopit*/
+
+#shopbanner{
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+   
+    
+
+}
+#pro-cont{
+width:50%;
+
+}
+#pro-cont h6{
+    font-weight:bolder ;
+    color:#564024;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#pro-cont h5{
+    color:#564024;
+    font-family: 'Times New Roman', Times, serif;
+}
+.star{
+    color:yellow;
+}
+#cart{
+    color:#52350b;
+    cursor: pointer;
+}
+#cart:hover{
+    opacity: 50%;
+}
+.welcome_img {
+    width: 40%;
+    height: 300px;
+}
+
+.container {
+    margin-top: 100px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: start; 
+    grid-auto-rows: auto; 
+}
+#shop{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.container #pro-cont {
+    padding: 15px;
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(92, 59, 43);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+}
+
+.container .prof {
+    width: 100%; 
+    height: 300px; 
+    border-radius: 10%; 
+}
+
+.container h1{
+    font-weight:800;
+    margin-top: 5px;
+}
+
+
+.prof {
+    width: 60%;
+    height: 300px;
+}
+
+
+
+@media  (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .container .prof {
+        height: 200px;
+    }
+    
+
+    .container #pro-cont {
+        padding: 10px;
+    }
+    #pro-cont h6 {
+        font-size: 1rem;
+    }
+    #pro-cont h5 {
+        font-size: 0.85rem;
+    }
+    #cart {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+    .container #pro-cont {
+        padding: 5px;
+    }
+    .container .prof {
+        height: 150px;
+    }
+    #pro-cont h6 {
+        font-size: 0.9rem;
+    }
+    #pro-cont h5 {
+        font-size: 0.8rem;
+    }
+    #cart {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/*pjesa e kontaktit*/
+
+#contactbanner{
+    background: linear-gradient(270deg,#615036,#cfb996, #968268,#b19265 ,#dfc793a1,#cfb996 );
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:150px ;
+    color:#412908;
+}
+#contact-details{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 50px;
+ 
+}
+.details {
+    margin-bottom: 70px;
+    margin-top:80px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+}
+.details p{
+    margin-left: 35px;
+}
+.details h1{
+    margin-left: 15px;
+}
+.details h4{
+    margin-left: 25px;
+}
+#contact-details .details h1{
+    margin-top:20px;
+    color:#584830;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact-details .details p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#3a2407;
+    font-size:14px;
+}
+#contact-details .details h4{
+    color:#584830;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact-details .map{
+    margin-top: 60px;
+    margin-right:100px;
+}
+
+
+
+
+
+/*forma e regjistrimit*/
+
+
+.row {
+    position: relative; 
+}
+
+.row img.prof {
+    width: 105%;
+    height: 300px;
+    border-radius: 4px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1; 
+}
+
+.blogbanner{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    margin-top: 100px;  
+}
+
+ .row h3 , .row button {
+    position: absolute;
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    z-index: 2; 
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.row h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    z-index: 5;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.row button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;margin-top: 45px;
+    border:1px solid white;
+}
+
+.row button a {
+    text-decoration: none;
+    color: white;
+}
+
+.row button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: transparent;
+    margin-top:120px;
+  
+}
+
+.footer_text {
+    text-align: center;
+    color: black;
+    top: 20%;
+    position: relative;
+    font-size: 10px;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; 
+  }
+  
+  @media(max-width: 820px) and (max-height: 1180px){
+    .footer-container{
+     
+         display: flex; 
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    }
+    
+    
+    
+    footer .col {
+      flex: 1 1 200px; 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+     
+    }
+  
+  /* Per instalimin e app */
+  .col-install-app img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .col .row img{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height:auto;
+  
+  }
+  .col .row img:hover{
+    cursor:pointer;
+  }
+  
+  .footer-container #logoja {
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1px;
+    font-style: italic;
+    cursor: pointer;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-weight: 700;
+  }
+  /* Per titujt e kolonave */
+  footer .col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .col #payment img:hover{
+   cursor: pointer;
+  }
+  /* Per linket dhe tekstin ne kolonat e footer-it */
+  footer .col a, 
+  footer .col p {
+    font-size: 1rem;
+    color: #666;
+    text-decoration: none;
+    margin: 5px 0;
+  }
+  
+  footer .col a:hover {
+    color: #000;
+  }
+  
+  /* Stili per ikonat e rrjeteve sociale */
+  .footer-container .icon i {
+    font-size: 1.2rem;
+    color: #666;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-container .icon i:hover {
+    color: #000;
+  }
+  
+  /* Stili per te drejtat e autorit */
+  footer .copyright {
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color:black;
+  }
+  .col{
+    margin-top:60px;
+  }
+  
+  
+
+.regji {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.student {
+    width: 100%;
+    height: 250px;
+}
+
+.form_deg {
+    padding-top: 200px;
+  
+}
+
+#inputi{
+    width:300px;
+    margin-top: 15px;
+    border-radius: 7px;
+}
+#login-btn{
+   background-color:transparent;
+   color:#3a2407;
+   box-shadow: 0 1px 0 3px rgba(0, 0, 0, 0.253);
+   border:1px solid white ;
+}
+
+.login_form {
+    background-color: white;
+    width: 400px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.307);
+}
+
+.title_deg {
+    background-color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius:  5px 5px 0 0;
+    font-size: 30px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.307);
+
+}
+.body_foto {
+background-color: #eccdc7;
+}
+
+
+
+.contact-form {
+  background-color: transparent !important; 
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 60%;
+  margin: 80px auto;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form h3 {
+  color: #3a2407;
+  font-family: 'DM Serif Text', serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  color: #564024;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border: 1px solid #d5b79f;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #3a2407;
+  font-size: 16px;
+  font-family: 'Verdana', sans-serif;
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #b29079;
+  box-shadow: 0 0 5px #b29079;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #b29079;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
